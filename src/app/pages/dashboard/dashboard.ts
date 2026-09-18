@@ -24,7 +24,7 @@ export class Dashboard implements OnInit, OnDestroy {
     const token = localStorage.getItem('admin_token');
     const email = localStorage.getItem('admin_email');
     if (!token) {
-      this.router.navigate(['/d56b699830e77ba53855679cb1d252da']);
+      this.router.navigate(['/93ceb7962cf40688f3c465ba57ff7286893fd19e']);
       return;
     }
 
@@ -192,6 +192,6 @@ export class Dashboard implements OnInit, OnDestroy {
   logout() {
     localStorage.removeItem('admin_token');
     localStorage.removeItem('admin_email');
-    this.router.navigate(['/d56b699830e77ba53855679cb1d252da']);
+    this.router.navigate(['/93ceb7962cf40688f3c465ba57ff7286893fd19e']);
   }
 }
