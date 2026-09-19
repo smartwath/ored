@@ -49,7 +49,7 @@ export class Login {
         localStorage.setItem('admin_token', resData.token);
         localStorage.setItem('admin_email', resData.user.email);
         this.toastService.show('تم تسجيل الدخول بنجاح', 'success');
-        this.router.navigate(['/dc7161be3dbf2250c8954e560cc35060']);
+        this.router.navigate(['/78ec75992b00c3d649acd808f57fcf7d9cba85e9']);
       } else {
         this.errorMessage.set(resData.error || 'بريد الكتروني أو كلمة مرور غير صحيحة');
         this.toastService.show(this.errorMessage(), 'error');
